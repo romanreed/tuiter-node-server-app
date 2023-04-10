@@ -7,8 +7,7 @@ import TuitsController
   from "./controllers/tuits/tuits-controller.js";
 import cors from 'cors'
 import mongoose from "mongoose";
-const DB_CONNECTION_STRING = "mongodb+srv://reedrom:<NBfKm5mRpazCVc6L>@cluster0.cy0ktli.mongodb.net/?retryWrites=true&w=majority";
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+const CONNECTION_STRING = "mongodb+srv://reedrom:<NBfKm5mRpazCVc6L>@cluster0.cy0ktli.mongodb.net/?retryWrites=true&w=majority"
  || 'mongodb://127.0.0.1:27017/tuiter';
 mongoose.connect(CONNECTION_STRING);
 
